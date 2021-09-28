@@ -3,7 +3,7 @@
     <p class="text-h5 font-weight-bold">Dev Enviroment Services</p>
     <p class="text-caption mt-n3 grey--text">Your current development enviroment on internal network</p>
 
-    <v-row class="" align="center"   justify="center">
+    <v-row class="" align="center"   justify="center" no-gutters>
       <v-col cols="12" xl="8" lg="8">
         <v-card elevation="1" class="pa-6">
           <p class="text-h5 font-weight-bold">Server Status</p>
