@@ -127,7 +127,7 @@ rounded
         <v-expansion-panel @click="close=false">
         <v-expansion-panel-header class="text-caption">More</v-expansion-panel-header>
         <v-expansion-panel-content class="animate__animated animate__fadeIn animate__slow ">
-          <v-list   rounded dense class="ml-n6 mr-n4" flat>
+          <v-list   rounded dense class="ml-n6 mr-n6" flat>
          <v-list-item @click="close=true" v-for="item in items2" :key="item"  to="/t" link>
             <v-list-item-icon>
               <v-icon size="20" :color="$route.path=='/'?'#3E3C7D':'#bec4d6'">{{item.icon}}</v-icon>
