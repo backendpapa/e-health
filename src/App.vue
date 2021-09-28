@@ -4,19 +4,13 @@
     <v-navigation-drawer
         permanent
         color="white"
-        class="d-none d-sm-flex "
+        class="d-none d-sm-flex a "
         absolute
         style="color:#3E3C7D !important"
-        overflow
-
-        
-        
-        
+  
       >
         
          <p class="text-h6 font-weight-bold pa-3 mt-3">Dev/Env</p>
-
-        
 
         <v-list
           nav
@@ -85,11 +79,11 @@ rounded
 
       </v-navigation-drawer>
     </div>
-    <v-content >
-   <v-card  flat class="pa-4" color="#F7F7FB" style="height:95vh;">
+    <v-main >
+   <v-card  flat class="pa-4" color="#F7F7FB" style="height:100vh;">
     
       <!-- <div class=""> -->
-        
+      <!-- mobile -->
          <div class="d-flex d-sm-none" style="width:100%" >
            <div style="width:100%">
            <v-row  no-gutters class="ma-2 animate__animated animate__fadeIn " style="height:30px;width:100%" align="center" justify="center">
@@ -98,29 +92,107 @@ rounded
 
            <div style="display:flex">
               
-                <p class="text-caption font-weight-bold mt-1">Hi, Alex <v-icon size="25">mdi-chevron-down</v-icon></p>
-                <v-avatar  rounded="true" size="30">
+               <p class="text-caption font-weight-bold mt-1">Hi, Alex
+                  
+                  <v-menu
+     
+      rounded
+      offset-y
+      class="mr-4 white"
+       :close-on-content-click="close"
+       :close-on-click="close"
+    >
+      <template v-slot:activator="{ attrs, on }">
+        <v-btn
+          text
+          class="ml-n2"
+          icon
+          v-bind="attrs"
+          v-on="on"
+        >
+          <v-icon size="25">mdi-chevron-down</v-icon>
+        </v-btn>
+      </template>
+
+      <v-list  rounded dense class="">
+         <v-list-item @click="close=true" v-for="item in items" :key="item"  to="/t" link>
+            <v-list-item-icon>
+              <v-icon size="20" :color="$route.path=='/'?'#3E3C7D':'#bec4d6'">{{item.icon}}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title :style="$route.path=='/'?'color:#3E3C7D':'color:#bec4d6'" class="font-weight-bold text-caption">{{item.title}}</v-list-item-title>
+          </v-list-item>
+      </v-list>
+     
+      <v-expansion-panels >
+        <v-expansion-panel @click="close=false">
+        <v-expansion-panel-header class="text-caption">More</v-expansion-panel-header>
+        <v-expansion-panel-content class="animate__animated animate__fadeIn animate__slow ">
+          <v-list   rounded dense class="ml-n6 mr-n4" flat>
+         <v-list-item @click="close=true" v-for="item in items2" :key="item"  to="/t" link>
+            <v-list-item-icon>
+              <v-icon size="20" :color="$route.path=='/'?'#3E3C7D':'#bec4d6'">{{item.icon}}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title :style="$route.path=='/'?'color:#3E3C7D':'color:#bec4d6'" class="font-weight-bold text-caption">{{item.title}}</v-list-item-title>
+          </v-list-item>
+      </v-list>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      </v-expansion-panels>
+    </v-menu> </p>
+                <v-avatar class="mt-1"  rounded="true" size="30">
                     <v-img src="./assets/me.jpg"></v-img>
                 </v-avatar>
              
            </div>
          </v-row>
-         <v-text-field  solo dense flat placeholder="Search" class="font-weight-bold text-caption mt-3 animate__animated animate__fadeIn animate__slow" append-icon="mdi-magnify" @click:append="hey" ></v-text-field>
+         <v-text-field rounded  solo dense flat placeholder="Search" class="font-weight-bold text-caption mt-3 animate__animated animate__fadeIn animate__slow" append-icon="mdi-magnify" @click:append="hey" ></v-text-field>
            </div>
          </div>
-        <div class="d-none d-sm-flex">
+         <!-- web menu2 -->
+        <div class="d-none d-sm-flex animate__animated animate__fadeIn animate__slow" style="margin-left:18%">
            <v-row  no-gutters class="ma-2 " style="height:30px" align="center" justify="center">
-           <v-btn text plain icon small class="mt-n3 "><v-icon class="" size="20">mdi-bell-outline</v-icon></v-btn>
+              <v-text-field rounded   solo dense flat placeholder="Search" class="font-weight-bold " append-icon="mdi-magnify" @click:append="hey" ></v-text-field>
+           <v-spacer></v-spacer>
             <v-spacer></v-spacer>
 
-           <div style="display:flex">
+            <v-btn text plain icon small class="mt-n3 mr-3 text-caption animate__animated animate__rubberBand  "><v-icon class="" size="20">mdi-inbox-arrow-down</v-icon></v-btn>
+             <v-btn text plain icon small class="mt-n3 mr-3 animate__animated animate__rubberBand "><v-icon class="" size="20">mdi-bell-outline</v-icon></v-btn>
+             <v-btn text plain icon small class="mt-n3 mr-3 animate__animated animate__rubberBand "><v-icon class="" size="20">mdi-cog-outline</v-icon></v-btn>
               
-                <p class="text-caption font-weight-bold mt-1">Hi, Alex <v-icon size="25">mdi-chevron-down</v-icon></p>
-                <v-avatar  rounded="true" size="30">
+                <p class="text-caption font-weight-bold mt-1">Hi, Alex
+                  
+                  <v-menu
+     
+      rounded="true"
+      offset-y
+    >
+      <template v-slot:activator="{ attrs, on }">
+        <v-btn
+          text
+          class="ml-n2"
+          icon
+          v-bind="attrs"
+          v-on="on"
+        >
+          <v-icon size="25">mdi-chevron-down</v-icon>
+        </v-btn>
+      </template>
+
+      <v-list>
+        <v-list-item
+          v-for="item in items"
+          :key="item"
+          link
+        >
+          <v-list-item-title v-text="item"></v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu> </p>
+                <v-avatar class="mt-n3"  rounded="true" size="30">
                     <v-img src="./assets/me.jpg"></v-img>
                 </v-avatar>
-             
-           </div>
+            
+           <!-- </div> -->
          </v-row>
         </div>
        <!-- </div> -->
@@ -128,11 +200,11 @@ rounded
       
      
         <router-view class="d-flex d-sm-none animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh"/>
-        <router-view class="d-none d-sm-flex" style="overflow-y:scroll;height:80vh"/>
+        <router-view class="d-none d-sm-flex mt-2 animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh;margin-left:18.5%;"/>
      
     
    </v-card>
-   </v-content>
+   </v-main>
   </v-app>
 </template>
 
@@ -142,7 +214,20 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
+    items:[
+      {title:'Dashboard',icon:'mdi-home'},
+      {title:'Services',icon:'mdi-toolbox-outline'},
+      {title:'Manage',icon:'mdi-cog-outline'},
+    
+    ],
+    items2:[
+      {title:'Ticket',icon:'mdi-zip-disk'},
+      {title:'Documentation',icon:'mdi-file-document '},
+      
+      
+    
+    ],
+    close:true
   }),
   methods:{
     hey(){
