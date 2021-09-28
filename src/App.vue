@@ -7,11 +7,9 @@
         class="d-none d-sm-flex a "
         absolute
         style="color:#3E3C7D !important"
-  
       >
         
          <p class="text-h6 font-weight-bold pa-3 mt-3">Dev/Env</p>
-
         <v-list
           nav
           dense  
@@ -150,7 +148,7 @@ rounded
            </div>
          </div>
          <!-- web menu2 -->
-        <div class="d-none d-sm-flex animate__animated animate__fadeIn animate__slow" style="margin-left:18%">
+        <div class="d-none d-sm-flex animate__animated animate__fadeIn animate__slow" style="margin-left:20%">
            <v-row  no-gutters class="ma-2 " style="height:30px" align="center" justify="center">
               <v-text-field rounded   solo dense flat placeholder="Search" class="font-weight-bold " append-icon="mdi-magnify" @click:append="hey" ></v-text-field>
            <v-spacer></v-spacer>
@@ -200,8 +198,12 @@ rounded
       
       
      
-        <router-view class="d-flex d-sm-none animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh"/>
-        <router-view class="d-none d-sm-flex mt-2 animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh;margin-left:18.5%;"/>
+        <div class="d-flex d-sm-none">
+          <router-view class=" animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh;width:100%"/>
+        </div>
+        <div class="d-none d-sm-flex">
+          <router-view class=" mt-2 animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh;margin-left:21%;width:100%"/>
+        </div>
      
     
    </v-card>

@@ -1,6 +1,45 @@
 <template>
-  <div>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium, facere exercitationem cupiditate quam fuga ratione necessitatibus dolore impedit dolorum maiores ab? Tempora, illum consectetur! Corporis tempora repellendus adipisci, quae harum saepe cum repellat dolores alias autem ratione esse aperiam cupiditate. Provident eum eveniet aliquam tenetur beatae laboriosam dolorem hic at iusto ipsam, quos asperiores veritatis dolore nulla rerum inventore recusandae quam? Rerum asperiores culpa esse quasi laudantium, est ipsa odio dicta, quae blanditiis tempore nam error quaerat molestiae! Consequuntur voluptatem cum, voluptas quia eius hic excepturi nostrum ex mollitia! Sed officia, delectus voluptatibus nam animi cumque nostrum vitae consectetur fuga consequatur sequi error enim reprehenderit, adipisci odit natus fugiat quia dolorem recusandae deleniti amet ullam possimus. Expedita ipsum quae ducimus facere ut hic reprehenderit quaerat dolore nostrum, velit debitis possimus commodi tempora sunt magnam optio nesciunt. Laborum, vero quae! Soluta tenetur dolores dignissimos nesciunt dolor totam ipsa, quae pariatur omnis, earum quam consequatur voluptatibus voluptas. Fugit dolorem magnam placeat ea iste dicta porro quibusdam rem nesciunt blanditiis, doloremque, distinctio at praesentium? Asperiores consectetur consequuntur cupiditate assumenda optio. Quasi, rem perspiciatis quisquam enim, maiores in sit modi saepe unde officiis expedita, magnam tenetur obcaecati accusantium. Omnis necessitatibus quasi et, autem sed delectus aliquam quo enim optio ut harum reprehenderit commodi libero ab animi perferendis soluta veritatis debitis nam quibusdam aperiam molestiae repudiandae recusandae reiciendis. Odit repudiandae in quis atque dolor dignissimos dolores, voluptatum vero nobis molestiae deleniti! Delectus porro laudantium tenetur ut excepturi corrupti quam nesciunt earum consequuntur at obcaecati optio eveniet fugit quos, enim dicta molestias ipsum, aliquam animi laboriosam eligendi eius officia nemo quae! Harum, quia, quod adipisci possimus delectus incidunt reiciendis perspiciatis aut cum expedita laudantium! Deleniti quia voluptas aperiam officiis laudantium. Tempore dolorem eaque quia harum praesentium illo culpa, atque placeat est reprehenderit soluta amet veritatis debitis velit? Incidunt cupiditate culpa, rerum unde dolor architecto nulla voluptatem voluptatibus, minus iste neque quaerat dolorum quia natus, suscipit illo commodi a. Accusantium, adipisci sed, enim cumque ducimus totam possimus quos modi nisi ea voluptatibus excepturi aperiam quo, nulla veritatis. Harum quaerat et laboriosam quos quod fugiat. Tempora nisi excepturi asperiores voluptatem maxime sunt eaque dolore nam placeat laudantium repudiandae alias necessitatibus dignissimos doloribus, deserunt enim reiciendis est ipsa? Sed eos, laudantium aspernatur perferendis eum illo dicta quibusdam, earum officia exercitationem soluta pariatur mollitia expedita ea non ipsum obcaecati delectus ut nulla voluptate nihil! Labore, saepe a possimus consequuntur esse necessitatibus facilis aspernatur maiores voluptate officia, modi expedita molestiae alias repellat odit. Nisi porro sit necessitatibus quo odit illo nemo, fuga cumque, totam excepturi facere itaque vel delectus rerum, modi vitae voluptates pariatur impedit quod ab libero. At, quas laudantium alias asperiores nobis omnis similique officiis explicabo reiciendis repellat, aperiam earum saepe non assumenda quasi fuga blanditiis sequi neque facilis molestiae. Modi et dolore consequuntur neque explicabo non facere optio consectetur laboriosam, est eos rem quam minus dolorum provident similique! Delectus id repudiandae nesciunt? Unde doloremque similique atque. Non accusantium odio dolorum facilis fugit expedita vitae modi quos saepe.</p>
+  <div class="mt-7">
+    <p class="text-h5 font-weight-bold">Dev Enviroment Services</p>
+    <p class="text-caption mt-n3 grey--text">Your current development enviroment on internal network</p>
+
+    <v-row class="" align="center"   justify="center">
+      <v-col cols="12" xl="8" lg="8">
+        <v-card elevation="1" class="pa-6">
+          <p class="text-h5 font-weight-bold">Server Status</p>
+          <p class="text-caption mt-n2"><v-icon size="15">mdi-server</v-icon> Server-BRAVO-192.167</p>
+          <v-row no-gutters >
+            <v-col cols="12" xl="5" lg="5">
+                <v-row align="center" justify="start" no-gutters>
+                    <v-col class=" pr-2"  cols="6">
+                      <v-card class="pa-2" flat  style="height:30vh;background-color:#C9F4EF;border-radius:15px">
+
+                          <v-row  align="center" justify="center" no-gutters>
+                            <p  class="text-caption mt-2">Settings</p>
+                            <v-spacer></v-spacer>
+                            <v-btn class="mt-n1" icon text plain><v-icon>mdi-dots-vertical</v-icon></v-btn>
+                          </v-row>
+                      </v-card>
+                    </v-col>
+                    <v-col class="pl-2"   cols="6">
+                      <v-card flat  style="height:30vh;background-color:#FBBFC2;border-radius:15px">
+
+                      </v-card>
+                    </v-col>
+                </v-row>
+            </v-col>
+            <v-col cols="12"></v-col>
+            
+          </v-row>
+        </v-card>
+      </v-col>
+      <v-col cols="12" xl="4" lg="4">
+        <v-card flat class="pa-2">
+          dkdk
+        </v-card>
+      </v-col>
+    </v-row>
+
   </div>
 </template>
 
