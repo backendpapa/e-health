@@ -15,15 +15,28 @@
                       <v-card class="pa-2" flat  style="height:30vh;background-color:#C9F4EF;border-radius:15px">
 
                           <v-row  align="center" justify="center" no-gutters>
-                            <p  class="text-caption mt-2">Settings</p>
+                            <p style="color:#484C87" class="text-caption font-weight-bold mt-2">Settings</p>
                             <v-spacer></v-spacer>
-                            <v-btn class="mt-n1" icon text plain><v-icon>mdi-dots-vertical</v-icon></v-btn>
+                            <v-btn class="mt-n1" icon text plain><v-icon style="color:#484C87">mdi-dots-vertical</v-icon></v-btn>
                           </v-row>
+                          <div style="position:absolute;bottom:0">
+                            <p class="text-h4 font-weight-bold" style="color:#484C87">24</p>
+                            <p class="mt-n3 text-caption font-weight-bold" style="color:#484C87">Running <br> Services</p>
+                          </div>
                       </v-card>
                     </v-col>
                     <v-col class="pl-2"   cols="6">
-                      <v-card flat  style="height:30vh;background-color:#FBBFC2;border-radius:15px">
+                      <v-card flat class="pa-2"  style="height:30vh;background-color:#FBBFC2;border-radius:15px">
+                           <v-row  align="center" justify="center" no-gutters>
+                            <p style="color:#484C87"  class="text-caption font-weight-bold mt-2">Settings</p>
+                            <v-spacer></v-spacer>
+                            <v-btn class="mt-n1" icon text plain><v-icon style="color:#484C87">mdi-dots-vertical</v-icon></v-btn>
+                          </v-row>
 
+                           <div style="position:absolute;bottom:0">
+                            <p class="text-h4 font-weight-bold" style="color:#484C87">2</p>
+                            <p class="mt-n3 text-caption font-weight-bold" style="color:#484C87">Crashed <br> Services</p>
+                          </div>
                       </v-card>
                     </v-col>
                 </v-row>
