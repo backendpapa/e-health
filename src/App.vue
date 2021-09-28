@@ -98,7 +98,8 @@ rounded
      
       rounded
       offset-y
-      class="mr-4 white"
+      
+      class="mr-10 white"
        :close-on-content-click="close"
        :close-on-click="close"
     >
@@ -123,16 +124,16 @@ rounded
           </v-list-item>
       </v-list>
      
-      <v-expansion-panels >
+      <v-expansion-panels  >
         <v-expansion-panel @click="close=false">
         <v-expansion-panel-header class="text-caption">More</v-expansion-panel-header>
-        <v-expansion-panel-content class="animate__animated animate__fadeIn animate__slow ">
+        <v-expansion-panel-content class="animate__animated animate__fadeIn animate__slow mr-n7 ">
           <v-list   rounded dense class="ml-n6 mr-n6" flat>
          <v-list-item @click="close=true" v-for="item in items2" :key="item"  to="/t" link>
             <v-list-item-icon>
               <v-icon size="20" :color="$route.path=='/'?'#3E3C7D':'#bec4d6'">{{item.icon}}</v-icon>
             </v-list-item-icon>
-            <v-list-item-title :style="$route.path=='/'?'color:#3E3C7D':'color:#bec4d6'" class="font-weight-bold text-caption">{{item.title}}</v-list-item-title>
+            <v-list-item-title :style="$route.path=='/'?'color:#3E3C7D':'color:#bec4d6'" class="font-weight-bold text-caption ml-n2">{{item.title}}</v-list-item-title>
           </v-list-item>
       </v-list>
         </v-expansion-panel-content>
