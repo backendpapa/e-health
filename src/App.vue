@@ -5,7 +5,7 @@
         permanent
         color="white"
         class="d-none d-sm-flex "
-        app
+        absolute
         style="color:#3E3C7D !important"
         overflow
 
@@ -85,27 +85,54 @@ rounded
 
       </v-navigation-drawer>
     </div>
-   <v-card  flat class="ma-4" color="#F7F7FB" style="height:95vh">
-      <div class="">
-         <v-row no-gutters class="ma-2" style="height:30px" align="center" justify="center">
-           <v-btn text plain icon small class="mt-n3"><v-icon size="20">mdi-bell-outline</v-icon></v-btn>
+    <v-content >
+   <v-card  flat class="pa-4" color="#F7F7FB" style="height:95vh;">
+    
+      <!-- <div class=""> -->
+        
+         <div class="d-flex d-sm-none" style="width:100%" >
+           <div style="width:100%">
+           <v-row  no-gutters class="ma-2 animate__animated animate__fadeIn " style="height:30px;width:100%" align="center" justify="center">
+           <v-btn text plain icon small class="mt-n3 animate__animated animate__rubberBand"><v-icon size="20">mdi-bell-outline</v-icon></v-btn>
             <v-spacer></v-spacer>
 
            <div style="display:flex">
               
-                <p class="text-caption font-weight-bold">Hi, Alex <v-icon size="25">mdi-chevron-down</v-icon></p>
+                <p class="text-caption font-weight-bold mt-1">Hi, Alex <v-icon size="25">mdi-chevron-down</v-icon></p>
                 <v-avatar  rounded="true" size="30">
                     <v-img src="./assets/me.jpg"></v-img>
                 </v-avatar>
              
            </div>
          </v-row>
-       </div>
+         <v-text-field  solo dense flat placeholder="Search" class="font-weight-bold text-caption mt-3 animate__animated animate__fadeIn animate__slow" append-icon="mdi-magnify" @click:append="hey" ></v-text-field>
+           </div>
+         </div>
+        <div class="d-none d-sm-flex">
+           <v-row  no-gutters class="ma-2 " style="height:30px" align="center" justify="center">
+           <v-btn text plain icon small class="mt-n3 "><v-icon class="" size="20">mdi-bell-outline</v-icon></v-btn>
+            <v-spacer></v-spacer>
+
+           <div style="display:flex">
+              
+                <p class="text-caption font-weight-bold mt-1">Hi, Alex <v-icon size="25">mdi-chevron-down</v-icon></p>
+                <v-avatar  rounded="true" size="30">
+                    <v-img src="./assets/me.jpg"></v-img>
+                </v-avatar>
+             
+           </div>
+         </v-row>
+        </div>
+       <!-- </div> -->
       
       
-      <router-view/>
+     
+        <router-view class="d-flex d-sm-none animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh"/>
+        <router-view class="d-none d-sm-flex" style="overflow-y:scroll;height:80vh"/>
+     
     
    </v-card>
+   </v-content>
   </v-app>
 </template>
 
@@ -117,6 +144,11 @@ export default {
   data: () => ({
     //
   }),
+  methods:{
+    hey(){
+      // alert("hey")
+    }
+  }
 };
 </script>
 <style >
