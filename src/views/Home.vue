@@ -58,7 +58,7 @@
                   <p class="text-caption">Available 32.03GB from 120GB</p>
                   <p class="text-caption font-weight-bold mb-n1"><span  style="margin-left:19%;color:#383879">18GB</span>
                   <span  style="margin-left:2%;color:#BABED0">2GB</span><span  style="margin-left:5%;color:#6C85E6">84GB</span></p>
-                  <div style="height:10vh;" >
+                  <div style="height:10vh;position:absolute:top:0;bottom:0" >
                       <div style="height:10vh;border-radius:15px;background-color:#DBE0EE" class="">
                           <div style="height:10vh;border-radius:15px;background-color:#383879;margin-left:20%">
                               <div style="height:10vh;border-radius:15px;background-color:#BABED0;margin-left:10%">
@@ -70,8 +70,8 @@
                           </div>
                       </div>
                   </div>
-                  <br>
-                  <v-row no-gutters>
+                
+                  <v-row style="position:absolute;bottom:0" no-gutters>
                     <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#DBE0EE">mdi-square</v-icon>Free Space</p>
                     <v-spacer></v-spacer>
                     <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#383879">mdi-square</v-icon>Swap File</p>
