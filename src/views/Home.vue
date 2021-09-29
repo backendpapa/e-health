@@ -93,7 +93,7 @@
               <p class="font-weight-bold">Logged Commits</p>
               <p class="text-caption mt-n2"><v-icon size="12">mdi-github</v-icon> Github</p>
               <p style="font-size:10px" class="mt-n2"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Waiting for Review</p>
-               <p style="font-size:10px" class="mt-n3"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Accepted</p>
+               <p style="font-size:10px" class="mt-n3"><v-icon size="12" color="#6C85E6">mdi-circle</v-icon> Accepted</p>
             </v-col>
             <v-col cols="5">
                 <div class="">
