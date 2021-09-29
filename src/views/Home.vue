@@ -55,7 +55,7 @@
               
               <p class="text-caption d-flex d-sm-none mt-3"><v-icon size="15">mdi-database-settings-outline</v-icon> Server Account Quote</p>
               <v-card class="pa-2" flat style="height:30vh;background-color:#F3F5FD;border-radius:15px">
-                  <p class="text-caption">Available 32.03GB from 120GB</p>
+                  <p class="text-caption font-weight-bold">Available 32.03GB from 120GB</p>
                   <p class="text-caption font-weight-bold mb-n1"><span  style="margin-left:19%;color:#383879">18GB</span>
                   <span  style="margin-left:2%;color:#BABED0">2GB</span><span  style="margin-left:5%;color:#6C85E6">84GB</span></p>
                   <div style="height:10vh;position:absolute:top:0;bottom:0" >
@@ -72,13 +72,13 @@
                   </div>
                 
                   <v-row style="position:absolute;bottom:0" no-gutters>
-                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#DBE0EE">mdi-square</v-icon>Free Space</p>
+                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#DBE0EE">mdi-square</v-icon> Free Space</p>
                     <v-spacer></v-spacer>
-                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#383879">mdi-square</v-icon>Swap File</p>
+                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#383879">mdi-square</v-icon> Swap File</p>
                     <v-spacer></v-spacer>
-                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#BABED0">mdi-square</v-icon>Cache</p>
+                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#BABED0">mdi-square</v-icon> Cache</p>
                     <v-spacer></v-spacer>
-                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#6C85E6">mdi-square</v-icon>App Files</p>
+                    <p style="font-size:10px" class="mt-2"><v-icon size="12" color="#6C85E6">mdi-square</v-icon> App Files</p>
                   </v-row>
               </v-card>
             </v-col>
@@ -86,9 +86,54 @@
           </v-row>
         </v-card>
       </v-col>
-      <v-col cols="12" xl="5" lg="5" class="">
-        <v-card  class="ma-2">
-          dkdk
+      <v-col style="height:100%" cols="12" xl="5" lg="5" class="">
+        <v-card style="height:50%"  class="ma-2 pa-4">
+          <v-row no-gutters>
+            <v-col cols="7">
+              <p class="font-weight-bold">Logged Commits</p>
+              <p class="text-caption mt-n2"><v-icon size="12">mdi-github</v-icon> Github</p>
+              <p style="font-size:10px" class="mt-n2"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Waiting for Review</p>
+               <p style="font-size:10px" class="mt-n3"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Accepted</p>
+            </v-col>
+            <v-col cols="5">
+                <div class="">
+                    <vc-donut
+    background="white" foreground="#F3F5FD"
+    :size="100" unit="px" :thickness="25"
+ 
+    :sections="sections" :total="100"
+    :start-angle="0" :auto-adjust-text-size="true"
+    @section-click="handleSectionClick">
+    <h1 class="text-h5 font-weight-bold">16</h1>
+    <p style="font0size:10px" class="">Storage server</p>
+  </vc-donut>
+                </div>
+            </v-col>
+          </v-row>
+        </v-card>
+        <v-card style="height:50%"  class="ma-2 pa-4">
+          <v-row no-gutters>
+            <v-col cols="7">
+              <p class="font-weight-bold">Logged Commits</p>
+              <p class="text-caption mt-n2"><v-icon size="12">mdi-github</v-icon> Github</p>
+              <p style="font-size:10px" class="mt-n2"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Waiting for Review</p>
+               <p style="font-size:10px" class="mt-n3 mb-n1"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Accepted</p>
+            </v-col>
+            <v-col cols="5">
+                <div class="">
+                    <vc-donut
+    background="white" foreground="#F3F5FD"
+    :size="100" unit="px" :thickness="25"
+ 
+    :sections="sections" :total="100"
+    :start-angle="0" :auto-adjust-text-size="true"
+    @section-click="handleSectionClick">
+    <h1 class="text-h5 font-weight-bold">16</h1>
+    <p style="font0size:10px" class="">Storage server</p>
+  </vc-donut>
+                </div>
+            </v-col>
+          </v-row>
         </v-card>
       </v-col>
     </v-row>
@@ -97,13 +142,16 @@
 </template>
 
 <script>
-  
-
-  export default {
-    name: 'Home',
-
-    components: {
-     
-    },
+export default {
+  name:'Home',
+  data(){
+    return {
+      sections: [
+          
+          { label: 'Green section', value: 50, color: '#6C85E6' },
+          { label: 'Blue section', value: 10, color: '#CCCFDC' }
+        ]
+    }
   }
+}
 </script>
