@@ -202,7 +202,7 @@ rounded
           <router-view class=" animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh;width:100%"/>
         </div>
         <div class="d-none d-sm-flex">
-          <router-view class=" mt-2 animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:80vh;margin-left:21%;width:100%"/>
+          <router-view class=" mt-2 animate__animated animate__fadeIn animate__slower" style="overflow-y:scroll;height:85vh;margin-left:21%;width:100%"/>
         </div>
      
     

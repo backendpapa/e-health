@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-7">
+  <div class="mt-4">
     <p class="text-h5 font-weight-bold">Dev Enviroment Services</p>
     <p class="text-caption mt-n3 grey--text">Your current development enviroment on internal network</p>
 
@@ -123,7 +123,7 @@
             <v-col cols="5">
                 <div class="">
                    
-                      <v-img width=100 src="../assets/server.png"></v-img>
+                      <v-img width=120 src="../assets/server.png"></v-img>
                   
                 </div>
             </v-col>
@@ -131,7 +131,80 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-row no-gutters align="center" justify="center">
+        <v-col cols="12" class="" xl="2" lg="3" >
+          <v-card  class=" ma-2" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px">
+          <div class="pa-3">
+            <p class="text-caption grey--text font-weight-bold"><v-icon size="30">mdi-gitlab</v-icon> Gitlab</p>
+          <p class="font-weight-bold">Gitlab</p>
+          <p class="grey--text text-caption mb-n2 mt-n4">Version 1.2.4</p>
+          </div>
+          <v-btn color="#EBEEF7" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px;text-transform:none" block>
+            <v-row no-gutters align="center" justify="center">
+              <v-icon color="#ADE648" size="10">mdi-circle</v-icon>
+              <p class="text-caption mt-4 ml-2">Running</p>
+              <v-spacer></v-spacer>
+              <v-icon size="10">mdi-information-outline</v-icon>
+            </v-row>
+          </v-btn>
+        </v-card>
+        </v-col>
 
+        <v-col cols="12" class="" xl="2" lg="3" >
+          <v-card  class=" ma-2" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px">
+          <div class="pa-3">
+            <p class="text-caption grey--text font-weight-bold"><v-icon size="30">mdi-oci</v-icon> Oci</p>
+          <p class="font-weight-bold">Oracle Cloud </p>
+          <p class="grey--text text-caption mb-n2 mt-n4">Version 1.1.4</p>
+          </div>
+          <v-btn color="#EBEEF7" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px;text-transform:none" block>
+            <v-row no-gutters align="center" justify="center">
+              <v-icon color="#ADE648" size="10">mdi-circle</v-icon>
+              <p class="text-caption mt-4 ml-2">Running</p>
+              <v-spacer></v-spacer>
+              <v-icon size="10">mdi-information-outline</v-icon>
+            </v-row>
+          </v-btn>
+        </v-card>
+        </v-col>
+
+         <v-col cols="12" class="" xl="2" lg="3" >
+          <v-card  class=" ma-2" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px">
+          <div class="pa-3">
+            <p class="text-caption grey--text font-weight-bold"><v-icon size="30">mdi-kubernetes</v-icon> Kubernetes</p>
+          <p class="font-weight-bold">Kubernetes </p>
+          <p class="grey--text text-caption mb-n2 mt-n4">Version 1.1.4</p>
+          </div>
+          <v-btn color="#FBC0C3" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px;text-transform:none" block>
+            <v-row no-gutters align="center" justify="center">
+              <v-icon color="red" size="10">mdi-circle</v-icon>
+              <p class="text-caption mt-4 ml-2 red--text">Crashed</p>
+              <v-spacer></v-spacer>
+              <v-icon size="10">mdi-information-outline</v-icon>
+            </v-row>
+          </v-btn>
+        </v-card>
+        </v-col>
+
+
+        <v-col cols="12" class="" xl="2" lg="3" >
+          <v-card  class=" ma-2" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px">
+          <div class="pa-3">
+            <p class="text-caption grey--text font-weight-bold"><v-icon size="30">mdi-apache-kafka</v-icon> Apache-kafka</p>
+          <p class="font-weight-bold">Apache-Kafka </p>
+          <p class="grey--text text-caption mb-n2 mt-n4">Version 2.1.3</p>
+          </div>
+          <v-btn color="#EBEEF7" style="border-bottom-right-radius:15px;border-bottom-left-radius:15px;text-transform:none" block>
+            <v-row no-gutters align="center" justify="center">
+              <v-icon color="#ADE648" size="10">mdi-circle</v-icon>
+              <p class="text-caption mt-4 ml-2">Running</p>
+              <v-spacer></v-spacer>
+              <v-icon size="10">mdi-information-outline</v-icon>
+            </v-row>
+          </v-btn>
+        </v-card>
+        </v-col>
+    </v-row>
   </div>
 </template>
 
