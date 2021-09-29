@@ -4,9 +4,11 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
     background-color: #F3F2F7;
+    color:#484C87;
   }
   
 #app{
     font-family: 'Montserrat', sans-serif;
     /* background-color: #F7F7FB; */
+   
 }
