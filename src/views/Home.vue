@@ -114,23 +114,17 @@
         <v-card style="height:50%"  class="ma-2 pa-4">
           <v-row no-gutters>
             <v-col cols="7">
-              <p class="font-weight-bold">Logged Commits</p>
-              <p class="text-caption mt-n2"><v-icon size="12">mdi-github</v-icon> Github</p>
-              <p style="font-size:10px" class="mt-n2"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Waiting for Review</p>
-               <p style="font-size:10px" class="mt-n3 mb-n1"><v-icon size="12" color="#BDC1D2">mdi-circle</v-icon> Accepted</p>
+              <p class="font-weight-bold mb-n1">Requesting New Services</p>
+              <p class="text-caption mb-n1">Are you looking for a new tool for your project?</p>
+           
+                <a href="" class="text-caption ">Services list</a>
+              
             </v-col>
             <v-col cols="5">
                 <div class="">
-                    <vc-donut
-    background="white" foreground="#F3F5FD"
-    :size="100" unit="px" :thickness="25"
- 
-    :sections="sections" :total="100"
-    :start-angle="0" :auto-adjust-text-size="true"
-    @section-click="handleSectionClick">
-    <h1 class="text-h5 font-weight-bold">16</h1>
-    <p style="font0size:10px" class="">Storage server</p>
-  </vc-donut>
+                   
+                      <v-img width=100 src="../assets/server.png"></v-img>
+                  
                 </div>
             </v-col>
           </v-row>
